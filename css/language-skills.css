@@ -1,0 +1,67 @@
+/* Styles pour la section des compétences linguistiques */
+.language-skills {
+  margin-top: 40px;
+}
+
+.language-skills h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #e6f1ff;
+}
+
+.language-skill {
+  margin-bottom: 20px;
+}
+
+.language-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.language-name {
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+
+.language-level {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background-color: var(--card-background);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+}
+
+/* Animation pour les barres de progression */
+@keyframes progressAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--progress-width);
+  }
+}
+
+.progress-bar {
+  animation: progressAnimation 1.5s ease-out forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .language-skills {
+    margin-top: 30px;
+  }
+}
